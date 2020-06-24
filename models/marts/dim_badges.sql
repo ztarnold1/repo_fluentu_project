@@ -1,1 +1,1 @@
-select * from {{ref('stg_badges')}} order by 1
+select * from {{ref('stg_badges')}}
