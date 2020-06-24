@@ -1,0 +1,1 @@
+SELECT post_type_id, text as post_type_text FROM {{ source('stack_overflow_project', 'post_type_text') }}

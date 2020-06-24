@@ -1,0 +1,92 @@
+version: 2
+
+models:
+    - name: stg_badges
+      description: badges staging table, changing field names
+      columns:
+          - name: badge_id
+            description: Primary Key
+            tests:
+                - unique
+                - not_null
+
+    - name: stg_comments
+      description: comments staging table
+      columns:
+          - name: comment_id
+            description: Primary Key
+            tests:
+                - unique
+                - not_null
+
+    - name: stg_comments_text
+      description: comments text staging table, changing field names
+      columns:
+          - name: comment_id
+            description: Primary Key
+            tests:
+                - unique
+                - not_null
+
+    - name: stg_post_history
+      description: post history staging table
+      columns:
+          - name: post_history_id
+            description: Primary Key
+            tests:
+                - unique
+                - not_null
+
+    - name: stg_post_history_text
+      description: post history text staging table, changing field names
+      columns:
+          - name: post_history_id
+            description: Primary Key
+            tests:
+                - unique
+                - not_null
+
+    - name: stg_post_type_text
+      description: post type text staging table, changing field names
+      columns:
+          - name: post_type_id
+            description: Primary Key
+            tests:
+                - unique
+                - not_null
+                  
+    - name: stg_posts
+      description: posts staging table, changing field names and merging the answers and questions into one table
+      columns:
+          - name: post_id
+            description: Primary Key
+            tests:
+                - unique
+                - not_null        
+
+    - name: stg_posts_text
+      description: post text staging table, changing field names merging the answers and questions texts into one table
+      columns:
+          - name: post_id
+            description: Primary Key
+            tests:
+                - unique
+                - not_null
+
+    - name: stg_users
+      description: users staging table, changing field names
+      columns:
+          - name: user_id
+            description: Primary Key
+            tests:
+                - unique
+                - not_null 
+
+    - name: stg_post_history_type_id_text
+      description: post history type id text staging table, changing field names. used to create the texts that are used for filtering
+      columns:
+          - name: post_history_type_id
+            description: Primary Key
+            tests:
+                - unique
+                - not_null

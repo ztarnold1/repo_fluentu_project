@@ -1,0 +1,1 @@
+SELECT post_history_id, creation_date, post_id, post_history_type_id, revision_guid, user_id FROM {{ source('stack_overflow_project', 'post_history') }}

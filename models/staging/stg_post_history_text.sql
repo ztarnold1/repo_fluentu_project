@@ -1,0 +1,1 @@
+SELECT post_history_id, text as post_history_text, comment as post_history_edit_comment FROM {{ source('stack_overflow_project', 'post_history_text') }}
