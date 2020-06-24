@@ -1,15 +1,5 @@
-Welcome to your new dbt project!
+This is for the trial project with FluentU.
 
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](http://community.getbdt.com/) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+I created an initial dataset in Google BigQuery titled "stack_overflow_project", which is the source for the dbt project.
+The dbt dataset is titled dbt_prod, which transforms the data from the "stack_overflow_project" and creates dim tables and one fact table for use in a viz tool.
+Additional information about each table and transformations can be found in the respective schema files and sql files.
