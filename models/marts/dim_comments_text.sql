@@ -1,1 +1,1 @@
-select * from {{ref('stg_comments_text')}}
+select * from {{ref('stg_comments_text')}} order by 1

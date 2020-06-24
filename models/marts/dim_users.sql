@@ -1,1 +1,1 @@
-select * from {{ref('stg_users')}}
+select * from {{ref('stg_users')}} order by 1

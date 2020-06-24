@@ -1,1 +1,1 @@
-select * from {{ref('stg_posts_text')}}
+select * from {{ref('stg_posts_text')}} order by 1
