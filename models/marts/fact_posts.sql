@@ -2,11 +2,6 @@
 Questions that aren't open are being filtered out by the lookup to the stg_post_history and stg_post_history_type_id_text table.
 Popular/trending is defined by me as having an view count >= 10 AND a score of >= 5.
 */
-{{
-  config(
-    sort = 'post_id'
-  )
-}}
 
 with history_type as (
     select post_history_type_id, post_history_type_text from {{ref('stg_post_history_type_id_text')}}
@@ -58,3 +53,4 @@ answered_questions_and_answers as (
  )   
 
 select * from final
+order by 1
