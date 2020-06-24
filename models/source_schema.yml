@@ -1,0 +1,103 @@
+version: 2
+#Main tables have a filter on create date >= 05/01/2020 in order to use only recent data
+sources:
+  - name: stack_overflow_project
+    tables:
+      - name: badges
+        description: badges source table from BigQuery
+        columns:
+            - name: badge_id
+              description: Primary Key
+              tests:
+                - unique
+                - not_null
+
+      - name: comments
+        description: comments source table from BigQuery
+        columns:
+            - name: comment_id
+              description: Primary Key
+              tests:
+                  - unique
+                  - not_null
+
+      - name: comments_text
+        description: comments text source table from BigQuery
+        columns:
+            - name: comment_id
+              description: Primary Key
+              tests:
+                  - unique
+                  - not_null              
+
+      - name: post_history
+        description: post history source table from BigQuery
+        columns:
+            - name: post_history_id
+              description: Primary Key
+              tests:
+                  - unique
+                  - not_null   
+
+      - name: post_history_text
+        description: post history text source table from BigQuery
+        columns:
+            - name: post_history_id
+              description: Primary Key
+              tests:
+                  - unique
+                  - not_null
+
+      - name: post_type_text
+        description: post type text source table from BigQuery
+        columns:
+            - name: post_type_id
+              description: Primary Key
+              tests:
+                  - unique
+                  - not_null
+                  
+      - name: posts_answers
+        description: post answers source table from BigQuery
+        columns:
+            - name: post_id
+              description: Primary Key
+              tests:
+                  - unique
+                  - not_null        
+
+      - name: posts_answers_text
+        description: post answers text source table from BigQuery
+        columns:
+            - name: post_id
+              description: Primary Key
+              tests:
+                  - unique
+                  - not_null
+
+      - name: posts_questions
+        description: post questions source table from BigQuery
+        columns:
+            - name: post_id
+              description: Primary Key
+              tests:
+                  - unique
+                  - not_null  
+
+      - name: posts_questions_text
+        description: post questions text source table from BigQuery
+        columns:
+            - name: post_id
+              description: Primary Key
+              tests:
+                  - unique
+                  - not_null 
+
+      - name: users
+        description: users source table from BigQuery
+        columns:
+            - name: user_id
+              description: Primary Key
+              tests:
+                  - unique
+                  - not_null 
