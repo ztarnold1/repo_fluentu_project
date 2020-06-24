@@ -53,3 +53,4 @@ answered_questions_and_answers as (
  )   
 
 select * from final
+order by 1
