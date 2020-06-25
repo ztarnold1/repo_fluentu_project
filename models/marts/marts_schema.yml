@@ -67,7 +67,7 @@ models:
     - name: dim_post_tags
       description: user facing dimension table for post tags data. This table has one row per tag for each post_id
       columns:
-          - name: user_id
+          - name: unique_id
             description: Primary Key
             tests:
                 - unique
