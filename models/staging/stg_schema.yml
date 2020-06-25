@@ -1,7 +1,7 @@
 version: 2
 
 models:
-    - name: stg_badges
+    - name: stg_user_badges
       description: badges staging view, changing field names
       columns:
           - name: badge_id
@@ -90,3 +90,12 @@ models:
             tests:
                 - unique
                 - not_null
+
+    - name: stg_badge_names
+      description: badge names staging view, will be used as a bridge table
+      columns:
+          - name: badge_name
+            description: Primary Key
+            tests:
+                - unique
+                - not_null                
