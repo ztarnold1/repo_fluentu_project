@@ -1,0 +1,2 @@
+/*this table will be a bridge table between the users table and the posts_tags table, so that I can filter the set of posts based on a given user's (expert's) set of badges  */
+select * from {{ref('stg_badge_names')}}

@@ -73,3 +73,11 @@ models:
                 - unique
                 - not_null  
 
+    - name: dim_user_badges
+      description: user facing dimension table for users' badges
+      columns:
+          - name: badge_id
+            description: Primary Key
+            tests:
+                - unique
+                - not_null
